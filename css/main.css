@@ -84,6 +84,7 @@ a img {
 /* 브랜드 로고 */
 
 .brand {
+    display: block;
     margin-top: 0;
     margin-bottom: 0;
     width: 215px;
@@ -124,16 +125,32 @@ a img {
 /* 메인 내비게이션 */
 
 .app-navigation {
-    background-color: pink;
+    background-color: rgba(20, 24, 44, 0.9);
     position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-    /* 네 부분 전부 0으로 값을 주면 파이어 폭스에서 오류가 남 */
-    /* top: 0;
     left: 0;
     width: 100%;
-    height: 100%; */
+    height: 100%;
+}
+
+.reset-list {
+    position: relative;
+    top: 70px;
+}
+
+.reset-list li {
+    width: 1419px;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    border-bottom: 1px solid #F5F4FB;
+    border-bottom-color: rgba(245, 244, 251, 0.3)
+}
+
+.reset-list li a {
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    height: 50%;
 }
