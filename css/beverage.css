@@ -1,0 +1,284 @@
+/* --------------------------------------------
+  * 이디야 음료 디자인 */
+
+
+/* 수업시간 했던 것 */
+
+
+/* baverage section 기본 여백 */
+
+
+/* 
+.beverage {
+    padding: 20px 18px;
+}
+
+.ediya-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    width: 340px;
+}
+
+.ediya-menu__item {
+    background-color: yellow;
+    margin-top: 20px;
+    position: relative;
+}
+
+.ediya-menu__item:first-child {
+    margin-top: 0;
+}
+
+.ediya-menu__item a {
+    display: block;
+    background-color: pink;
+}
+
+.ediya-menu__item a img {
+    transform: scale(0.85);
+    transition: all 300ms;
+    min-width: 240px;
+    max-width: 330px;
+}
+
+.ediya-menu__item a:hover img {
+    transform: none;
+}
+
+.ediya-menu__item figure {
+    margin: 0;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.ediya-menu__item--detail {
+    background-color: hsla(140, 50%, 50%, 0.5);
+    border: 1px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 18px 11px 22px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ediya-menu__item--name {
+    margin-top: 0 0 14px;
+}
+
+.ediya-menu__item--name [lang='en'] {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #616161;
+    margin-top: 8px;
+}
+
+.ediya-menu__item--detail p {
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+
+.ediya-menu__item--detail dl {
+    margin: 0;
+}
+
+.ediya-menu__item--multi-column dd {
+    margin-left: 0;
+}
+
+.ediya-menu__item--multi-column {
+    background-color: yellow;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 2px solid #000;
+}
+
+.is-close-panel {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+@media all and (min-width: 768px) {
+    .ediya-menu {
+        flex-flow: row wrap;
+        width: 740px;
+    }
+    .ediya-menu__item {
+        width: 360px;
+        margin: 20px 0 0 20px;
+    }
+    .ediya-menu__item:nth-child(odd) {
+        margin-left: 0;
+    }
+    .ediya-menu__item:nth-child(-n+2) {
+        margin-top: 0;
+    }
+} */
+
+
+/* 음료 메뉴 섹션 */
+
+.beverage {
+    padding: 20px;
+}
+
+.ediya-menu {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.ediya-menu__item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.ediya-menu__item:last-child {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.ediya-menu__item a {
+    display: block;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #464646;
+}
+
+.ediya-menu__item figure {
+    margin: 0;
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.ediya-menu__item img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: scale(0.85);
+    transition: all 0.4s ease;
+}
+
+.ediya-menu__item a:hover img {
+    transform: none;
+}
+
+.ediya-menu__item--detail {
+    opacity: 0;
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #e0e0e0;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.6s ease;
+}
+
+.ediya-menu__item--detail.is-active {
+    opacity: 1;
+}
+
+.ediya-menu__item--name {
+    display: block;
+    border-bottom: solid 2px #202023;
+    padding-bottom: 1em;
+    font-weight: 400;
+    font-size: 18px;
+    color: #202022;
+}
+
+.ediya-menu__item--name span {
+    display: block;
+    font-size: 14px;
+    color: #737373;
+}
+
+.ediya-menu__item--detail dl {
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.ediya-menu__item--detail dt {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.ediya-menu__item--detail dd {
+    float: right;
+    width: 40%;
+    margin-left: 0;
+}
+
+.ediya-menu__item--multi-column {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    column-gap: 20px;
+    column-fill: auto;
+    column-rule: 1px solid #999;
+    padding: 1em 1.5em;
+    background: #f8f8f8;
+}
+
+.ediya-menu__item--multi-column.is-2 {
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.ediya-menu__item--multi-column dl {
+    margin: 0;
+}
+
+.ediya-menu__item--multi-column span {
+    display: block;
+}
+
+.ediya-menu__item--detail .button.is-close-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px 15px;
+    font-size: 24px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.ediya-menu__item--detail .button.is-close-panel:hover {
+    background: #f3f3f3;
+}
+
+
+/* Desktop UI 적용을 위한 Breakpoint */
+
+@media all and (min-width: 768px) {
+    /* 데스크탑 음료 메뉴 섹션 */
+    .beverage {
+        width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* 이디야 메뉴 아이템의 플렉스 흐름을 row로 변경 */
+    .ediya-menu {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .ediya-menu__item {
+        position: relative;
+        margin-bottom: 20px;
+        width: 360px;
+    }
+    .ediya-menu__item:nth-child(odd) {
+        margin-bottom: 0;
+    }
+}
