@@ -123,6 +123,24 @@ a img {
 }
 
 
+/* 메인 메뉴 닫기 버튼 */
+
+.is-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    padding: 17px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.is-close-menu:hover {
+    transform: scale(1.5);
+}
+
+
 /* 메인 내비게이션 */
 
 .app-navigation {
@@ -135,15 +153,15 @@ a img {
     padding-top: 70px;
 }
 
-.reset-list li {
+.app-navigation li {
     border-bottom: 1px solid rgba(245, 244, 251, 0.3);
 }
 
-.reset-list li:last-child {
+.app-navigation li:last-child {
     border-bottom: 0;
 }
 
-.reset-list a {
+.app-navigation a {
     display: block;
     color: #fefefe;
     box-sizing: border-box;
@@ -151,43 +169,13 @@ a img {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 10px;
+    transition: all 0.2s linear;
+}
+
+.app-navigation a:hover,
+.app-navigation a:focus {
+    background: #24388D;
 }
 
 
-/* .reset-list li {
-    box-sizing: border-box;
-    height: 40px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 10px;
-    border-bottom: 1px solid rgba(245, 244, 251, 0.3);
-}
-
-.reset-list li:last-child {
-    border-bottom: 0;
-}
-
-.reset-list a {
-    display: block;
-    color: #fefefe;
-} */
-
-
-/* .reset-list a:hover {
-    opacity: 0.75;
-} */
-
-
-/* 내비게이션 헤더바 */
-
-.is-close-menu {
-    box-sizing: border-box;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 10px;
-    right: 11px;
-    background-color: rgba(255, 255, 255, 0.01);
-    color: #fff;
-    padding: 0;
-}
+/* 이디야 음료 목록 */
