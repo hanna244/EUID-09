@@ -179,3 +179,18 @@ a img {
 
 
 /* 이디야 음료 목록 */
+
+.ediya-menu {
+    padding: 20px 18px;
+}
+
+.ediya-menu-list {
+    display: flex;
+    flex-flow: column wrap;
+    width: 339px;
+}
+
+.beverage-item img {
+    min-width: 204px;
+    min-height: 293px;
+}
