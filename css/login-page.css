@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../images/coffee-desktop.jpg) no-repeat center;
+}
+
+.login-page {
+    padding: 120px 32px 316px;
+    color: #fff;
+}
+
+.login-page-title {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.login-page-title [lang="en"] {
+    display: block;
+}
+
+.login-form-textbox {
+    margin: 0;
+}
+
+.login-form-textbox input {
+    height: 48px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}

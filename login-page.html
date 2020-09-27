@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDIYA COFFEE</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login-page.css">
 </head>
 
 <body>
@@ -18,18 +18,22 @@
         </button>
     </header>
     <main class="app-main">
-        <section class="a11y-hidden">로그인 페이지
-            <h2>로그인</h2>
-            <p><span lang="en">Welcome, Ediya Coffee</span>이디야커피에 오신 것을 환영합니다.</p>
+        <section class="login-page">
+            <div class="login-page-title">
+                <h2>로그인</h2>
+                <p><span lang="en">Welcome, Ediya Coffee</span>이디야커피에 오신 것을 환영합니다.</p>
+            </div>
             <form action="/">
                 <p class="login-form-textbox">
                     <label>이메일</label>
                     <input type="email" name="id" placeholder="yamoo9@euid.dev">
+                    <i class="login-icon"></i>
                 </p>
                 <div class="caption">이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</div>
                 <p class="login-form-textbox">
                     <label>패스워드</label>
                     <input type="password" name="pw" placeholder="숫자, 영어 조합 6자 이상">
+                    <i class="password-icon"></i>
                 </p>
                 <p class="login-form-checkbox">
                     <label><input type="checkbox" name="pwd" minlength="6" checked>이메일 저장</label>
