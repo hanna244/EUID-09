@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ediya Coffee - 이디야 음료</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <script src="./js/helper.js" defer></script>
     <script src="./js/index.js" defer></script>
@@ -43,11 +44,14 @@
                 <li class="ediya-menu__item">
                     <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">
                         <figure>
-                            <img src="./images/iced-cherry-blossoms-latte.png" alt width="323" height="323" />
+                            <img src="./images/iced-cherry-blossoms-latte.png" alt width="323" height="323" /> _
                             <figcaption>ICED 벚꽃라떼</figcaption>
                         </figure>
+                        <div></div>
+                        <a href=""></a>
+
                     </a>
-                    <div class="ediya-menu__item--detail" role="dialog" aria-modal="true" aria-labelledby="ediya-menu__item1">
+                    <div hidden class="ediya-menu__item--detail" role="dialog" aria-modal="true" aria-labelledby="ediya-menu__item1">
                         <h3 id="ediya-menu__item1" class="ediya-menu__item--name">ICED 벚꽃라떼<span lang="en">Cherry Blossom Latte</span></h3>
                         <p>은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</p>
                         <div class="ediya-menu__item--multi-column is-2">
