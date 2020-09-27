@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIYA COFFEE</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <h1 class="brand">
+            <a href="./index.html"><img src="./images/ediya-logo.gif" alt="Ediya Coffee"></a>
+        </h1>
+        <button type="button" class="button is-open-menu" aria-label="메뉴 열기" title="메뉴 열기">
+            <span class="ir"></span>
+        </button>
+    </header>
+    <main class="app-main">
+        <section class="a11y-hidden">로그인 페이지
+            <h2>로그인</h2>
+            <p><span lang="en">Welcome, Ediya Coffee</span>이디야커피에 오신 것을 환영합니다.</p>
+            <form action="/">
+                <p class="login-form-textbox">
+                    <label>이메일</label>
+                    <input type="email" name="id" placeholder="yamoo9@euid.dev">
+                </p>
+                <div class="caption">이메일 입력 방법이 잘못되었습니다. (예: user@domain.io)</div>
+                <p class="login-form-textbox">
+                    <label>패스워드</label>
+                    <input type="password" name="pw" placeholder="숫자, 영어 조합 6자 이상">
+                </p>
+                <p class="login-form-checkbox">
+                    <label><input type="checkbox" name="pwd" minlength="6" checked>이메일 저장</label>
+                </p>
+                <button type="button" class="button is-login-button" aria-label="로그인 버튼" title="로그인 버튼">로그인</button>
+                <button type="button" class="button is-sign-up-bitton" aria-label="회원가입 버튼" title="회원가입 버튼">회원가입</button>
+            </form>
+        </section>
+    </main>
+</body>
